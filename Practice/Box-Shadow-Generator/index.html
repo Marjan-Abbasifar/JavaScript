@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shadowGenerator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <div id="element"></div>
+        </div>
+        <div class="sliders">
+            <div class="slider-wrapper">
+                <label for="h-shadow">horizontal shadow</label>
+                <input type="range" id="h-shadow" min="-100"  max="100" value="0">
+            </div>
+
+            <div class="slider-wrapper">
+                <label for="v-shadow">vertical shadow</label>
+                <input type="range" id="v-shadow" min="-100"  max="100" value="0">
+            </div>
+
+            <div class="slider-wrapper">
+                <label for="blur-radius">blur radius</label>
+                <input type="range" id="blur-radius" min="0"  max="100" value="0">
+            </div>
+
+            <div class="slider-wrapper">
+                <label for="spread-radius">spread radius</label>
+                <input type="range" id="spread-radius" min="-50"  max="50" value="0">
+            </div>
+
+            <div class="slider-wrapper">
+                <label for="shadow-color">shadow color</label>
+                <input type="color" id="shadow-color">
+            </div>
+            <div class="slider-wrapper">
+                <label for="shadow-color-opacity">shadow color opacity</label>
+                <input type="range" id="shadow-color-opacity" min="0"  max="1" step="0.1"  value="0">
+            </div>
+            <div class="input-wrapper">
+                <label for="shadow-inset"> inset shadow:</label>
+                <input type="checkbox" id="shadow-inset">
+            </div>
+            <div class="code-wrapper">
+                <textarea  id="code" rows="2"></textarea>
+                <button onclick="copyCode()">copy</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="shadowGenerator.js"></script> 
+</body>
+</html>
