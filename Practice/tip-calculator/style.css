@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 0.4px;
+}
+
+body{
+background-color: lightblue;
+}
+.container{
+    background: linear-gradient(to left, #EB8317, #10375C);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 450px;
+    padding: 30px 40px;
+    border-radius: 5px;
+    border: none;
+    outline: non;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    animation: slideIn 0.5s ease forwards;
+}
+@keyframes slideIn{
+    from{
+        top:-50%
+    }
+    to{
+        top: 50%;
+    }
+}
+
+h1{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+ 
+.lbl{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+.value{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+.input-box{
+    color: #10375C;
+    background-color: white;
+    padding: 5px;
+    transition: background-color 0.3s ease color 0.3s ease;
+    }
+
+    #bill{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100px;
+        text-align: right;
+        color: #10375C;
+        transition: color 0.3s ease;
+    }
+section:not(:last-child){
+    margin-bottom: 40px;
+}
+section:not(:first-child){
+    margin-top: 40px;
+}
+section:last-child{
+    background-color: honeydew;
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: fadeIn 1s ease forwards;
+
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+section:last-child .value,section:last-child .lbl{
+    color: #10375C;
+    transition: color 0.3s ease;
+}
+    
+   
+     input[type=range]{
+        width: 100%;
+        cursor: pointer;
+        appearance: none;
+        height: 2px;
+        background-color: #ddd;
+        outline: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+        
+     }
+
+     input[type=range]::-webkit-slider-thumb{
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background-color: lightblue;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+     }
+     input[type=range]:hover{
+        background-color: white;
+        box-shadow: 0 0 12px rgba(0,0,0,0.3);
+     }
+
+     input[type=range]::-webkit-slider-thumb:hover{
+        background-color: honeydew;
+
+     }
+        
