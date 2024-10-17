@@ -41,11 +41,10 @@ uploadButton.onchange = ()=>{
 
 
 
-const sliders = document.querySelectorAll(".filter input [type='range']");
-sliders.forEach(slider =>{
-    slider.addEventListener("input" ,addFilter);
-    slider.addEventListener("input" ,showRangeValue);
-
+const sliders = document.querySelectorAll(".filter input[type='range']");
+sliders.forEach(slider=>{
+    slider.addEventListener("input",addFilter);
+    slider.addEventListener("input",showRangeValue);
 });
 
 
@@ -64,7 +63,6 @@ function showRangeValue(){
     });
 
 }
-
 
 
 
@@ -118,7 +116,3 @@ downloadButton.onclick = () =>{
      };
 
 resetFilter();
-
-
-
-
