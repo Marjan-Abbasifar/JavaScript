@@ -1,0 +1,81 @@
+
+
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(45deg, #FF77B7, #C4E1F6,#8ABFA3,#00FF9C);
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: gradientBackground 15s ease infinite;
+}
+@keyframes gradientBackground {
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+
+}
+
+.card{
+    width: 450px;
+    height: 350px;
+    background-color:#EEEEEE ;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    animation: fadeIn 1s ease, pulse 2s infinite;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }   
+}
+
+@keyframes pulse{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.05);}
+    100%{transform: scale(1);}
+}
+
+#container{
+    padding: 20px;
+   
+}
+
+h1{
+    font-size: 47;
+    font-weight: 600px;
+    color:#fff;
+    background-color:#1230AE;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius:5px;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+#weekday{
+    font-size: 80px;
+    font-weight: 800;
+    color: #EB8317;
+    animation: pulse 2s infinite;
+
+}
+
+#phrase{
+    font-size: 40px;
+    font-weight: 800;
+    color: #1230AE;
+    animation: pulse 2s infinite;
+
+}
+
