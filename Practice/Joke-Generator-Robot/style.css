@@ -101,14 +101,14 @@ body{
 
 }
 
-.message-joke{
+.message.joke{
     background-color: var(--accent-color);
     color: var(--light-text-color);
     border-top-left-radius: 0px;
     padding: 30px;
 
 }
-.message-joke-response{
+.message.response{
     background-color: var(--chat-box-color);
     color: var(--light-background);
     border-top-right-radius: 0;
