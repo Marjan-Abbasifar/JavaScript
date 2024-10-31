@@ -10,7 +10,7 @@ async function generateJoke(){
     const message = createMessageElement('Hey robot, could you tell me a joke?');
     appendMessage(message);
     const joke = createMessageElement();
-    setElementContent(joke, '<i class="fa-solid fa-ellipsis"></i>>');
+    setElementContent(joke, '<i class="fa-solid fa-ellipsis"></i>');
     appendMessage(joke);
     const response = await fetch('https://icanhazdadjoke.com/',{headers:{accept:'application/json',},})
 
