@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    width: 35.87em;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 8fr 4fr;
+    background-color: #1e90ff;
+    border-radius: 0.5em;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow{
+    0%{
+       box-shadow: 0 0 10px #ffffff , 0 0 20px #ffffff;
+    }
+
+    100%{
+        box-shadow: 0 0 20px #ffffff , 0 0 40px #ffffff;
+    }
+}
+.clock-container{
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    font-size: 3.75em;
+    margin-left: 0.2em;
+    border-radius: 0.1em;
+    padding: 0.2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.clock-container span{
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.hour{
+    color: #ff0000;
+}
+.minute{
+    color: #00ff00;
+}
+.second{
+    color: #0000ff;
+}
+.date-container{
+    padding: 1em 0;
+    background-color: #1e90ff;
+    color: #ffffff;
+    text-align: center;
+}
+.date-container span{
+    font-size: 2em;
+
+}
